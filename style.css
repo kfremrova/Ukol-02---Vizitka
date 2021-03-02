@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 BARVY:
@@ -17,67 +23,76 @@ font-family: 'Nunito', sans-serif;
 */
 
 body {
-    font-family: 'Nunito', sans-serif;
-    background-color: #b2bec3;
+  font-family: "Nunito", sans-serif;
+  background-color: #b2bec3;
+  margin: 0;
 }
 
 div {
-    width: 550px;
-    background-color: white;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    border-radius: 10px;
-    font-size: 18px;
-    position: relative;
+  width: 550px;
+  background-color: white;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  position: relative;
+  box-shadow: 5px 5px 3px gray;
+}
+
+.prvni {
+  margin-top: 30px;
 }
 
 h1 {
-    color: #d63031;
-    font-weight: bold;
-    font-size: 36px;    
+  color: #d63031;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
 }
 
 img {
-    width: 150px;
-    border-radius: 50%;
-    position: absolute;
-    right: -75px;
-    top: -75px;
-    border-color: white;
-    border-width: 3px;
-
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  right: -75px;
+  top: -75px;
+  border-color: white;
+  border-width: 3px;
+  box-shadow: 3px 3px 1px gray;
 }
 
 a {
-    display: block;
-    text-decoration: none;
-    font-variant: small-caps;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-
+  display: block;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .twitter {
-    background-color: #1da1f2;
-    margin-bottom: 5px;
-    margin-top: 30px;
+  background-color: #1da1f2;
+  margin-bottom: 5px;
+  margin-top: 30px;
 }
 
 .fb {
-    background-color: #3b5998;
+  background-color: #3b5998;
 }
 
-.twitter a:hover {
-    background-color: #0b7bc1;
+.twitter a:hover,
+a:focus,
+a:active {
+  background-color: #0b7bc1;
 }
 
-.fb a:hover {
-    background-color: #2b406e;
+.fb a:hover,
+a:focus,
+a:active {
+  background-color: #2b406e;
 }
-
